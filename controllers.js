@@ -1,10 +1,9 @@
 const admin = require("firebase-admin");
 const axios = require("axios");
 const FIREBASE_API_KEY = "AIzaSyAlDgYQH2orEtqx29I1ecUqF9PWGmSBcy4";
-require('dotenv').config(); 
 
 // Inisialisasi aplikasi admin Firebase
-const serviceAccount = require(process.env.GOOGLE_APPLICATION_CREDENTIALS);
+const serviceAccount = require("./serviceAccountKey.json");
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
