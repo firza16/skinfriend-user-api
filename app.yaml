@@ -1,0 +1,4 @@
+runtime: nodejs16
+entrypoint: node app.js
+env_variables:
+  GOOGLE_APPLICATION_CREDENTIALS: "serviceAccountKey.json" 
